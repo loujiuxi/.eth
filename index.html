@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>铭文.eth - 永久拥有的去中心化域名</title> 
+  <link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" /> 
+  <link href="https://s2.ssl.qhres2.com/static/56662140ef7d5d03.css" rel="stylesheet" /> 
+  <script src="https://s2.ssl.qhres2.com/!2dd0bbf7/echats.js"></script> 
+  <style>        :root {            --color-black: #000000;            --color-white: #FFFFFF;            --color-gold: #D4AF37;            --color-gray: #F5F5F5;            --color-dark-gray: #333333;            --spacing-unit: 1rem;            --max-width: 1200px;        }                body {            font-family: 'Helvetica Neue', Arial, sans-serif;            color: var(--color-black);            background-color: var(--color-white);            margin: 0;            padding: 0;            line-height: 1.6;            -webkit-font-smoothing: antialiased;            -moz-osx-font-smoothing: grayscale;        }                .container {            width: 100%;            max-width: var(--max-width);            margin: 0 auto;            padding: 0 calc(var(--spacing-unit) * 2);        }                /* 导航栏 */        header {            position: fixed;            top: 0;            left: 0;            right: 0;            background-color: var(--color-white);            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);            z-index: 1000;            padding: calc(var(--spacing-unit) * 1.5) 0;        }                .navbar {            display: flex;            justify-content: space-between;            align-items: center;        }                .logo {            font-size: 1.5rem;            font-weight: 700;            color: var(--color-black);            text-decoration: none;        }                .logo span {            color: var(--color-gold);        }                .nav-links {            display: flex;            gap: calc(var(--spacing-unit) * 2);        }                .nav-links a {            color: var(--color-black);            text-decoration: none;            font-weight: 500;            transition: color 0.3s ease;        }                .nav-links a:hover {            color: var(--color-gold);        }                .cta-button {            background-color: var(--color-gold);            color: var(--color-black);            padding: calc(var(--spacing-unit) * 0.75) calc(var(--spacing-unit) * 1.5);            border-radius: 4px;            font-weight: 600;            transition: all 0.3s ease;        }                .cta-button:hover {            background-color: var(--color-black);            color: var(--color-white);        }                /* 英雄区域 */        .hero {            padding-top: calc(var(--spacing-unit) * 10);            padding-bottom: calc(var(--spacing-unit) * 6);            text-align: center;            background-color: var(--color-gray);        }                .hero h1 {            font-size: 3rem;            font-weight: 700;            margin-bottom: calc(var(--spacing-unit) * 1.5);            line-height: 1.2;        }                .hero p {            font-size: 1.25rem;            max-width: 800px;            margin: 0 auto calc(var(--spacing-unit) * 2);            color: var(--color-dark-gray);        }                /* 优势部分 */        .section {            padding: calc(var(--spacing-unit) * 6) 0;        }                .section-title {            text-align: center;            font-size: 2rem;            font-weight: 700;            margin-bottom: calc(var(--spacing-unit) * 3);            position: relative;        }                .section-title:after {            content: '';            display: block;            width: 80px;            height: 3px;            background-color: var(--color-gold);            margin: calc(var(--spacing-unit) * 1) auto 0;        }                .features-grid {            display: grid;            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));            gap: calc(var(--spacing-unit) * 2);            margin-top: calc(var(--spacing-unit) * 3);        }                .feature-card {            background-color: var(--color-white);            border: 1px solid rgba(0, 0, 0, 0.05);            border-radius: 8px;            padding: calc(var(--spacing-unit) * 2);            text-align: center;            transition: transform 0.3s ease, box-shadow 0.3s ease;        }                .feature-card:hover {            transform: translateY(-5px);            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);        }                .feature-icon {            font-size: 2.5rem;            color: var(--color-gold);            margin-bottom: calc(var(--spacing-unit) * 1.5);        }                .feature-title {            font-size: 1.25rem;            font-weight: 600;            margin-bottom: calc(var(--spacing-unit) * 1);        }                /* 对比表格 */        .comparison {            background-color: var(--color-gray);        }                table {            width: 100%;            border-collapse: collapse;            margin: calc(var(--spacing-unit) * 3) 0;        }                th, td {            padding: calc(var(--spacing-unit) * 1.5);            text-align: left;            border-bottom: 1px solid rgba(0, 0, 0, 0.1);        }                th {            font-weight: 600;            background-color: var(--color-white);        }                .highlight {            background-color: rgba(212, 175, 55, 0.1);            font-weight: 600;        }                /* 图表容器 */        .chart-container {            height: 400px;            margin: calc(var(--spacing-unit) * 3) 0;        }                /* 注册流程 */        .steps {            display: flex;            justify-content: space-between;            flex-wrap: wrap;            gap: calc(var(--spacing-unit) * 2);            margin-top: calc(var(--spacing-unit) * 3);        }                .step {            flex: 1;            min-width: 200px;            text-align: center;            position: relative;        }                .step-number {            width: 40px;            height: 40px;            background-color: var(--color-gold);            color: var(--color-white);            border-radius: 50%;            display: flex;            align-items: center;            justify-content: center;            font-weight: 700;            margin: 0 auto calc(var(--spacing-unit) * 1);        }                .step:not(:last-child):after {            content: '';            position: absolute;            top: 20px;            right: -30px;            width: 30px;            height: 2px;            background-color: var(--color-gold);        }                /* FAQ */        .faq-item {            margin-bottom: calc(var(--spacing-unit) * 1.5);            border-bottom: 1px solid rgba(0, 0, 0, 0.1);            padding-bottom: calc(var(--spacing-unit) * 1.5);        }                .faq-question {            font-weight: 600;            font-size: 1.1rem;            margin-bottom: calc(var(--spacing-unit) * 0.5);            cursor: pointer;            display: flex;            justify-content: space-between;            align-items: center;        }                .faq-question:after {            content: '+';            font-size: 1.5rem;            color: var(--color-gold);        }                .faq-question.active:after {            content: '-';        }                .faq-answer {            display: none;            padding-top: calc(var(--spacing-unit) * 0.5);        }                .faq-answer.show {            display: block;        }                /* 页脚 */        footer {            background-color: var(--color-black);            color: var(--color-white);            padding: calc(var(--spacing-unit) * 4) 0;            text-align: center;        }                .footer-links {            display: flex;            justify-content: center;            gap: calc(var(--spacing-unit) * 2);            margin-bottom: calc(var(--spacing-unit) * 2);        }                .footer-links a {            color: var(--color-white);            text-decoration: none;            transition: color 0.3s ease;        }                .footer-links a:hover {            color: var(--color-gold);        }                .copyright {            color: rgba(255, 255, 255, 0.7);            font-size: 0.9rem;        }                .ai-disclaimer {            font-size: 16pt;            color: #999;            text-align: center;            margin-top: 2rem;            padding: 1rem 0;            border-top: 1px solid #eee;        }                /* 响应式设计 */        @media (max-width: 768px) {            .hero h1 {                font-size: 2.25rem;            }                        .hero p {                font-size: 1.1rem;            }                        .steps {                flex-direction: column;            }                        .step:not(:last-child):after {                display: none;            }                        .nav-links {                display: none;            }        }    </style>
+ </head>
+ <body> 
+  <header> 
+   <div class="container"> 
+    <nav class="navbar"> 
+     <a href="#" class="logo">铭文<span>.eth</span></a> 
+     <div class="nav-links"> 
+      <a href="#features">核心优势</a> 
+      <a href="#comparison">对比分析</a> 
+      <a href="#technology">技术亮点</a> 
+      <a href="#register">注册流程</a> 
+      <a href="#faq">常见问题</a> 
+      <a href="#" class="cta-button">立即注册</a> 
+     </div> 
+    </nav> 
+   </div> 
+  </header> 
+  <section class="hero"> 
+   <div class="container"> 
+    <h1>永久拥有的去中心化域名</h1> 
+    <p>铭文.eth 是基于以太坊智能合约的永久域名系统，一次支付，永久持有，无需续费，完全去中心化。</p> 
+    <a href="#" class="cta-button" style="font-size: 1.1rem; padding: 0.75rem 2rem;">开始搜索域名</a> 
+   </div> 
+  </section> 
+  <section id="features" class="section"> 
+   <div class="container"> 
+    <h2 class="section-title">核心优势</h2> 
+    <div class="features-grid"> 
+     <div class="feature-card"> 
+      <div class="feature-icon"> 
+       <i class="fas fa-link"></i> 
+      </div> 
+      <h3 class="feature-title">去中心化架构</h3> 
+      <p>完全基于智能合约运行，无中心化控制点，真正实现Web3精神。</p> 
+     </div> 
+     <div class="feature-card"> 
+      <div class="feature-icon"> 
+       <i class="fas fa-infinity"></i> 
+      </div> 
+      <h3 class="feature-title">永久所有权</h3> 
+      <p>一次性支付即可永久持有域名，告别ENS的年费制度。</p> 
+     </div> 
+     <div class="feature-card"> 
+      <div class="feature-icon"> 
+       <i class="fas fa-coins"></i> 
+      </div> 
+      <h3 class="feature-title">超低铸造费</h3> 
+      <p>仅需约1美元起，远低于ENS的5-640美元年费。</p> 
+     </div> 
+     <div class="feature-card"> 
+      <div class="feature-icon"> 
+       <i class="fas fa-exchange-alt"></i> 
+      </div> 
+      <h3 class="feature-title">链上转账支持</h3> 
+      <p>支持以太坊生态无缝转账，未来将扩展至多链生态。</p> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <section id="comparison" class="section comparison"> 
+   <div class="container"> 
+    <h2 class="section-title">铭文.eth vs ENS</h2> 
+    <h3 style="text-align: center; margin-bottom: 1.5rem;">详细功能对比</h3> 
+    <table> 
+     <thead> 
+      <tr> 
+       <th>功能</th> 
+       <th>铭文.eth</th> 
+       <th>ENS</th> 
+      </tr> 
+     </thead> 
+     <tbody> 
+      <tr> 
+       <td>所有权模式</td> 
+       <td class="highlight">永久所有权</td> 
+       <td>年费租赁制</td> 
+      </tr> 
+      <tr> 
+       <td>去中心化程度</td> 
+       <td class="highlight">完全去中心化</td> 
+       <td>部分中心化</td> 
+      </tr> 
+      <tr> 
+       <td>基础费用</td> 
+       <td class="highlight">约1美元起</td> 
+       <td>5-640美元/年</td> 
+      </tr> 
+      <tr> 
+       <td>智能合约标准</td> 
+       <td class="highlight">ERC-721 NFT</td> 
+       <td>自定义标准</td> 
+      </tr> 
+      <tr> 
+       <td>二级市场交易</td> 
+       <td class="highlight">完全支持</td> 
+       <td>支持</td> 
+      </tr> 
+      <tr> 
+       <td>抗审查性</td> 
+       <td class="highlight">完全抗审查</td> 
+       <td>部分审查可能</td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h3 style="text-align: center; margin: 3rem 0 1.5rem;">10年持有成本对比</h3> 
+    <div class="chart-container" id="costChart"></div> 
+    <h3 style="text-align: center; margin: 3rem 0 1.5rem;">去中心化程度对比</h3> 
+    <div class="chart-container" id="decentralizationChart"></div> 
+   </div> 
+  </section> 
+  <section id="technology" class="section"> 
+   <div class="container"> 
+    <h2 class="section-title">技术亮点</h2> 
+    <div class="features-grid"> 
+     <div class="feature-card"> 
+      <div class="feature-icon"> 
+       <i class="fas fa-lock"></i> 
+      </div> 
+      <h3 class="feature-title">抗量子化加密算法</h3> 
+      <p>采用前沿的抗量子计算加密技术，确保域名安全未来无忧。</p> 
+     </div> 
+     <div class="feature-card"> 
+      <div class="feature-icon"> 
+       <i class="fas fa-cube"></i> 
+      </div> 
+      <h3 class="feature-title">ERC-721标准NFT</h3> 
+      <p>每个域名都是独特的NFT资产，可在任何支持ERC-721的市场交易。</p> 
+     </div> 
+     <div class="feature-card"> 
+      <div class="feature-icon"> 
+       <i class="fas fa-store"></i> 
+      </div> 
+      <h3 class="feature-title">二级市场自由交易</h3> 
+      <p>域名可在OpenSea等主流NFT市场自由买卖，价值由市场决定。</p> 
+     </div> 
+     <div class="feature-card"> 
+      <div class="feature-icon"> 
+       <i class="fas fa-shield-alt"></i> 
+      </div> 
+      <h3 class="feature-title">完全抗审查</h3> 
+      <p>无中心化控制点，任何人都无法冻结或没收您的域名。</p> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <section id="register" class="section" style="background-color: var(--color-gray);"> 
+   <div class="container"> 
+    <h2 class="section-title">注册流程</h2> 
+    <div class="steps"> 
+     <div class="step"> 
+      <div class="step-number">
+       1
+      </div> 
+      <h3>连接钱包</h3> 
+      <p>使用MetaMask等钱包连接我们的DApp</p> 
+     </div> 
+     <div class="step"> 
+      <div class="step-number">
+       2
+      </div> 
+      <h3>搜索域名</h3> 
+      <p>输入您想要的.eth域名并检查可用性</p> 
+     </div> 
+     <div class="step"> 
+      <div class="step-number">
+       3
+      </div> 
+      <h3>支付Gas费</h3> 
+      <p>确认交易并支付极低的Gas费用</p> 
+     </div> 
+     <div class="step"> 
+      <div class="step-number">
+       4
+      </div> 
+      <h3>链上确认</h3> 
+      <p>等待区块链确认，永久拥有您的域名</p> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <section id="faq" class="section"> 
+   <div class="container"> 
+    <h2 class="section-title">常见问题</h2> 
+    <div class="faq-list"> 
+     <div class="faq-item"> 
+      <div class="faq-question">
+       永久所有权是如何保障的？
+      </div> 
+      <div class="faq-answer"> 
+       <p>铭文.eth通过智能合约锁定域名所有权，一旦铸造完成，域名将永久归属于您的钱包地址，除非您主动转让。这与传统域名系统或ENS的年费租赁模式有本质区别。</p> 
+      </div> 
+     </div> 
+     <div class="faq-item"> 
+      <div class="faq-question">
+       域名可以在二级市场交易吗？
+      </div> 
+      <div class="faq-answer"> 
+       <p>是的，每个铭文.eth域名都是标准的ERC-721 NFT，可以在OpenSea、LooksRare等任何支持该标准的NFT市场上自由交易，交易过程完全去中心化。</p> 
+      </div> 
+     </div> 
+     <div class="faq-item"> 
+      <div class="faq-question">
+       未来会支持其他区块链吗？
+      </div> 
+      <div class="faq-answer"> 
+       <p>我们正在开发跨链解决方案，计划在未来支持Polygon、BNB Chain、Solana等主流区块链，实现多链域名互通。</p> 
+      </div> 
+     </div> 
+     <div class="faq-item"> 
+      <div class="faq-question">
+       与ENS域名有什么区别？
+      </div> 
+      <div class="faq-answer"> 
+       <p>主要区别在于：1) 所有权模式(永久vs年租) 2) 费用结构(一次性vs年费) 3) 去中心化程度(完全vs部分) 4) 技术标准(ERC-721 NFT vs 自定义)。铭文.eth更符合Web3的去中心化理念。</p> 
+      </div> 
+     </div> 
+     <div class="faq-item"> 
+      <div class="faq-question">
+       如果忘记私钥会怎样？
+      </div> 
+      <div class="faq-answer"> 
+       <p>由于系统完全去中心化，我们无法帮助恢复丢失的私钥。建议使用硬件钱包安全存储您的私钥，或设置多重签名钱包增加安全性。</p> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <footer> 
+   <div class="container"> 
+    <div class="footer-links"> 
+     <a href="#">首页</a> 
+     <a href="#features">核心优势</a> 
+     <a href="#comparison">对比分析</a> 
+     <a href="#technology">技术亮点</a> 
+     <a href="#register">注册流程</a> 
+     <a href="#faq">常见问题</a> 
+    </div> 
+    <p class="copyright">&copy; 2025 铭文.eth - 永久拥有的去中心化域名系统</p> 
+   </div> 
+  </footer> 
+  <div class="ai-disclaimer">
+    以上内容由AI搜集并生成，仅供参考 
+  </div> 
+  <script>        // 初始化ECharts图表        document.addEventListener('DOMContentLoaded', function() {            // 10年持有成本对比图表            const costChart = echarts.init(document.getElementById('costChart'));            const costOption = {                tooltip: {                    trigger: 'axis',                    axisPointer: {                        type: 'shadow'                    }                },                legend: {                    data: ['铭文.eth', 'ENS']                },                grid: {                    left: '3%',                    right: '4%',                    bottom: '3%',                    containLabel: true                },                xAxis: {                    type: 'category',                    data: ['1年', '3年', '5年', '10年']                },                yAxis: {                    type: 'value',                    name: '成本(美元)'                },                series: [                    {                        name: '铭文.eth',                        type: 'bar',                        data: [1, 1, 1, 1],                        itemStyle: {                            color: '#D4AF37'                        }                    },                    {                        name: 'ENS',                        type: 'bar',                        data: [5, 15, 25, 50],                        itemStyle: {                            color: '#333333'                        }                    }                ]            };            costChart.setOption(costOption);                        // 去中心化程度对比图表            const decentralizationChart = echarts.init(document.getElementById('decentralizationChart'));            const decentralizationOption = {                tooltip: {                    trigger: 'item'                },                legend: {                    top: '5%',                    left: 'center'                },                series: [                    {                        name: '去中心化程度',                        type: 'pie',                        radius: ['40%', '70%'],                        avoidLabelOverlap: false,                        itemStyle: {                            borderRadius: 10,                            borderColor: '#fff',                            borderWidth: 2                        },                        label: {                            show: false,                            position: 'center'                        },                        emphasis: {                            label: {                                show: true,                                fontSize: '18',                                fontWeight: 'bold'                            }                        },                        labelLine: {                            show: false                        },                        data: [                            { value: 100, name: '铭文.eth', itemStyle: { color: '#D4AF37' } },                            { value: 60, name: 'ENS', itemStyle: { color: '#333333' } }                        ]                    }                ]            };            decentralizationChart.setOption(decentralizationOption);                        // FAQ交互            const faqQuestions = document.querySelectorAll('.faq-question');            faqQuestions.forEach(question => {                question.addEventListener('click', () => {                    const answer = question.nextElementSibling;                    const isActive = question.classList.contains('active');                                        // 关闭所有其他答案                    document.querySelectorAll('.faq-answer').forEach(ans => {                        ans.classList.remove('show');                    });                    document.querySelectorAll('.faq-question').forEach(q => {                        q.classList.remove('active');                    });                                        // 切换当前答案                    if (!isActive) {                        question.classList.add('active');                        answer.classList.add('show');                    }                });            });                        // 平滑滚动            document.querySelectorAll('a[href^="#"]').forEach(anchor => {                anchor.addEventListener('click', function (e) {                    e.preventDefault();                                        const targetId = this.getAttribute('href');                    if (targetId === '#') return;                                        const targetElement = document.querySelector(targetId);                    if (targetElement) {                        targetElement.scrollIntoView({                            behavior: 'smooth'                        });                    }                });            });                        // 响应式调整            window.addEventListener('resize', function() {                costChart.resize();                decentralizationChart.resize();            });        });    </script>
+  <!-- 以上内容由AI搜集并生成，仅供参考 --> 以上内容均由AI搜集总结并生成，仅供参考
+ </body>
+</html>
